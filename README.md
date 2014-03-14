@@ -11,3 +11,12 @@ var $ = document.querySelectorAll.bind(document);
 Element.prototype.on = Element.prototype.addEventListener;
 ````
 
+####AOP (extend-wrap)
+````
+(function(o){
+  return function(p){
+    // do something new
+    o(p);
+  }
+})(oldfunc);
+````
